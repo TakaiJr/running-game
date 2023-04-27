@@ -38,6 +38,17 @@ body{
     height: 125px;
     width: 125px;
 }
+#container #mario-start{
+    position: absolute;
+    height: 120px;
+    width: 115px;
+    bottom: 26px;
+    left: 40px;
+}
+#container #mario-start img{
+    height: 120px;
+    width: 80px;
+}
 
 .jumpActive{ /*Será usada para ativar o pulo do Mário*/
     animation: marioJump 0.5s linear infinite;
@@ -57,6 +68,7 @@ body{
 
 .pipeAnimate{ /*Será usada para ativar a passagem do Cano pela tela*/
     animation: pipeAnimate 2s linear infinite;
+    animation-timing-function: cubic-bezier(0.90, 1, 2, 3);
 }
 
 #container #floor{ /* Dentro do local do game, ajuste da div floor.*/

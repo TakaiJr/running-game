@@ -6,6 +6,7 @@ let floor = document.querySelector("#floor");
 let clouds = document.querySelector("#clouds");
 let score = document.querySelector("#score");
 let GameOver = document.querySelector("#GameOver");
+let marioStart = document.querySelector("#mario-start");
 
 //Declarando variavéis para o score
 let interval = null;
@@ -20,6 +21,8 @@ window.addEventListener("keydown" , (start) => {
     if(start.code == "Space")
     {
         GameOver.style.display = "none"; //Usado para esconder o Game Over inicial
+        marioStart.style.display = "none"; //Remove imagem de início do Mário
+        mario.style.display = "block"; //Adiciona imagem do Mário correndo
         pipe.classList.add("pipeAnimate"); //Usado para inicar o Cano
         score.classList.remove("scoreCenter")//Remove score do centro
         floor.firstElementChild.style.animation = "floorAnimate 2.5s linear infinite"; //Usado para iniciar o Chão
@@ -50,6 +53,8 @@ let result = setInterval(() => {
 
     if(marioBottom <= 90 && pipeLeft >= 20 && pipeLeft <= 120){ //Calculando a distancia em que o personagem "bate" no cano.
         GameOver.style.display = "block"; //Usado para mostrar a mensagem de Game Over.
+        marioStart.style.display = "block"; //Adicionar imagem de início do Mário
+        mario.style.display = "none"; //Remove imagem do Mário correndo
         pipe.classList.remove("pipeAnimate"); //Usado para finalizar o Cano
         score.classList.add("scoreCenter")//Adiciona score no centro da tela//
         floor.firstElementChild.style.animation = "none"; //Usado para finalizar o Chão
