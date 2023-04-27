@@ -5,16 +5,37 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: 'Super Mario';
-    src: url('MarioFont.ttf'), format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 body{
     display: grid;
     place-items: center;
     height: 100vh;
+    background-color: #333;
+}
+
+h1{
+    text-align: center;
+    color: rgb(252, 252, 252);
+    font-size: 6vh;
+}
+
+p{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: rgb(252, 252, 252);
+}
+
+#play{
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    left: calc(50% - 223px);
+    top: calc(50% - 40px);
+    width: 450px;
+    height: 80px;
+    font-family: 'Press Start 2P', cursive;
+    color: #153386;
 }
 
 #container{ /* Local onde o jogo irá ficar.*/
@@ -23,7 +44,7 @@ body{
     position: relative;
     overflow: hidden;
     background-color: #6b88fe;
-    border: solid #333;
+    border: solid #b4b0b0;
 }
 
 #container #mario{ /*Dentro do local do game, ajustes da div mario*/
@@ -51,7 +72,7 @@ body{
 }
 
 .jumpActive{ /*Será usada para ativar o pulo do Mário*/
-    animation: marioJump 0.5s linear infinite;
+    animation: marioJump 0.5s ease-out infinite;
 }
 
 #container #pipe{ /* Dentro do local do game, ajuste da div pipe.*/
@@ -68,7 +89,6 @@ body{
 
 .pipeAnimate{ /*Será usada para ativar a passagem do Cano pela tela*/
     animation: pipeAnimate 2s linear infinite;
-    animation-timing-function: cubic-bezier(0.90, 1, 2, 3);
 }
 
 #container #floor{ /* Dentro do local do game, ajuste da div floor.*/

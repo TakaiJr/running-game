@@ -7,6 +7,7 @@ let clouds = document.querySelector("#clouds");
 let score = document.querySelector("#score");
 let GameOver = document.querySelector("#GameOver");
 let marioStart = document.querySelector("#mario-start");
+let play = document.querySelector("#play");
 
 //Declarando variavéis para o score
 let interval = null;
@@ -20,7 +21,8 @@ let scoreCounter = () => {
 window.addEventListener("keydown" , (start) => {
     if(start.code == "Space")
     {
-        GameOver.style.display = "none"; //Usado para esconder o Game Over inicial
+        GameOver.style.display = "none"; //Usado para esconder o Game Over inicial 
+        play.style.display = "none"; //Usado para esconder o Game Over inicial  
         marioStart.style.display = "none"; //Remove imagem de início do Mário
         mario.style.display = "block"; //Adiciona imagem do Mário correndo
         pipe.classList.add("pipeAnimate"); //Usado para inicar o Cano
