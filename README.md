@@ -26,11 +26,14 @@
   <!-- sobre o projeto -->
 ## Sobre o projeto:
 
-Este é um jogo criado apenas com HTML, CSS e Javascript.
+* Este é um jogo criado apenas com HTML, CSS e Javascript.
+* Projeto ainda em desenvolvimento, pode haver bugs.
+* Projeto não está 100% responsivo, dependendo de sua resolução, poderá vê alguns erros.
+
 
 Objetivo do jogo:
 * Salte com om Mário para escapar do cano.
-* ISe o cano tocar no Mário, você perde.
+* Se o cano tocar no Mário, você perde.
 * Tente sobreviver o máximo de tempo possível.
 
 <p align="right">(<a href="#top">Voltar ao início</a>)</p>
