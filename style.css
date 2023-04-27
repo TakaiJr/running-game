@@ -220,7 +220,7 @@ footer > a{
         left: 0;
     }
     100%{
-        left: -800px;
+        left: -500px;
     }
 }
 @keyframes cloudsAnimate{
