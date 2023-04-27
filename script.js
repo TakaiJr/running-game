@@ -21,6 +21,7 @@ window.addEventListener("keydown" , (start) => {
     {
         GameOver.style.display = "none"; //Usado para esconder o Game Over inicial
         pipe.classList.add("pipeAnimate"); //Usado para inicar o Cano
+        score.classList.remove("scoreCenter")//Remove score do centro
         floor.firstElementChild.style.animation = "floorAnimate 2.5s linear infinite"; //Usado para iniciar o Chão
         clouds.firstElementChild.style.animation = "cloudsAnimate 20s linear infinite"; //Usado para iniciar as Nuvens
 
@@ -47,9 +48,10 @@ let result = setInterval(() => {
     let marioBottom = parseInt(getComputedStyle(mario).getPropertyValue("bottom"));
     let pipeLeft = parseInt(getComputedStyle(pipe).getPropertyValue("left"));
 
-    if(marioBottom <= 90 && pipeLeft >= 10 && pipeLeft <= 110){ //Calculando a distancia em que o personagem "bate" no cano.
+    if(marioBottom <= 90 && pipeLeft >= 20 && pipeLeft <= 120){ //Calculando a distancia em que o personagem "bate" no cano.
         GameOver.style.display = "block"; //Usado para mostrar a mensagem de Game Over.
         pipe.classList.remove("pipeAnimate"); //Usado para finalizar o Cano
+        score.classList.add("scoreCenter")//Adiciona score no centro da tela//
         floor.firstElementChild.style.animation = "none"; //Usado para finalizar o Chão
         clouds.firstElementChild.style.animation = "none"; //Usado para finalizar as Nuvens
         clearInterval(interval);
