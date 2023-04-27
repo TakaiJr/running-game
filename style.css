@@ -5,6 +5,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+
 body{
     display: grid;
     place-items: center;
@@ -16,17 +17,26 @@ h1{
     text-align: center;
     color: rgb(252, 252, 252);
     font-size: 6vh;
+    font-family: 'Press Start 2P', cursive;
+    color: #6b88fe;
 }
 
-p{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    text-align: justify;
-    color: rgb(252, 252, 252);
+footer{
+    font-size: 20px;
+    color: #6b88fe;
 }
 
-#play{
+footer > a{
+    text-decoration: none;
+    color: #6b88fe;
+}
+
+:hover > a{
+    text-decoration: underline;
+    color: rgb(199, 33, 33);
+}
+
+#play{/*Tutorial  de pressionar Espaço para iniciar*/
     position: absolute;
     font-size: 20px;
     text-align: center;
@@ -38,7 +48,7 @@ p{
     color: #153386;
 }
 
-#msg{
+#msg{ /*Tutorial para usar a seta para pular*/
     display: none;
     position: absolute;
     font-size: 20px;
@@ -72,14 +82,14 @@ p{
     height: 125px;
     width: 125px;
 }
-#container #mario-start{
+#container #mario-start{ /*Dentro do local do game, ajustes da div mario-start.*/
     position: absolute;
     height: 120px;
     width: 115px;
     bottom: 26px;
     left: 40px;
 }
-#container #mario-start img{
+#container #mario-start img{ /*Dentro do local do game, e da div mario-start, há a imagem do Mário parado.*/
     height: 120px;
     width: 80px;
 }
@@ -142,17 +152,17 @@ p{
     font-family: 'Press Start 2P', cursive;  
     margin: 20px;
 }
-#score > b{
+#score > b{ /*Altera a fonte e cor do Score*/
     font-family: 'Press Start 2P', cursive; 
     color: rgb(199, 33, 33);
 }
 
-.scoreCenter{
+.scoreCenter{ /*Centraliza o Score no Game Over*/
     top: calc(50% - 3px);
     right: calc(50% - 80px);
 }
 
-#reset{
+#reset{ /*Mensagem para resetar o game*/
     display: none;
     height: auto;
     width: auto;
@@ -162,9 +172,9 @@ p{
     margin: 20px;
     color: #153386;
     text-align: center;
-    font-size: 2vh;
+    font-size: 15px;
     top: calc(50% - -25px);
-    right: calc(50% - 250px);
+    right: calc(50% - 300px);
 }
 
 #GameOver{ /*Ajustes na frase de fim de jogo.*/

@@ -27,8 +27,8 @@ window.addEventListener("keydown" , (start) => {
         play.style.display = "none"; //Usado para esconder o Game Over inicial  
         marioStart.style.display = "none"; //Remove imagem de início do Mário
         mario.style.display = "block"; //Adiciona imagem do Mário correndo
-        msg.style.display = "block";
-        reset.style.display = "none";
+        msg.style.display = "block"; //Adiciona tutorial para pular
+        reset.style.display = "none"; //Remove tutorial para resetar
         pipe.classList.add("pipeAnimate"); //Usado para inicar o Cano
         score.classList.remove("scoreCenter")//Remove score do centro
         floor.firstElementChild.style.animation = "floorAnimate 2.5s linear infinite"; //Usado para iniciar o Chão
@@ -61,8 +61,8 @@ let result = setInterval(() => {
         GameOver.style.display = "block"; //Usado para mostrar a mensagem de Game Over.
         marioStart.style.display = "block"; //Adicionar imagem de início do Mário
         mario.style.display = "none"; //Remove imagem do Mário correndo
-        msg.style.display = "none";
-        reset.style.display = "block";
+        msg.style.display = "none"; //Remove tutorial de pular
+        reset.style.display = "block"; //Adiciona tutorial de reset
         pipe.classList.remove("pipeAnimate"); //Usado para finalizar o Cano
         score.classList.add("scoreCenter")//Adiciona score no centro da tela//
         floor.firstElementChild.style.animation = "none"; //Usado para finalizar o Chão
