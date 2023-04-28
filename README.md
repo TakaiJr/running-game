@@ -11,7 +11,7 @@
     <br/>
     <br/>
     <p>Você pode acessar o game através da imagem abaixo:<p>
-    <a href=https://takaijr.github.io/running-game target="_blank"> <img src="https://raw.githubusercontent.com/TakaiJr/links-projeto/main/game-start.png?token=GHSAT0AAAAAACB5PCWTGMORFDYQFUED3PYIZCK64JQ" alt="Logo" width="300px" height="50px"></a> 
+    <a href="https://takaijr.github.io/running-game" target="_blank"> <img src="https://raw.githubusercontent.com/TakaiJr/links-projeto/main/game-start.png?token=GHSAT0AAAAAACB5PCWTGMORFDYQFUED3PYIZCK64JQ" alt="Logo" width="300px" height="50px"></a> 
 </p>
 </div>
 
